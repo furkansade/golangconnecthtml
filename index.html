@@ -17,9 +17,19 @@
         <h2> Welcome GoLang and HTML! </h2>
         <h4> {{ .test0 }} </h4>
         <p><b> Number: </b> {{ .test1 }} </p>
-        <h3>Arary</h3>
+        <hr />
+        <h3>Array</h3>
         <p> {{ .test2 }} </p>
     </div>
+
+    <div>
+        <h3>For-Range</h3>
+        {{ range $i, $v := .test2 }}
+            <p><b> {{ $i }} -> </b> {{ $v }} </p>
+        {{ end }}
+    </div>
+
+    
     
 </body>
 </html>
