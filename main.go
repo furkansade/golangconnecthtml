@@ -17,7 +17,7 @@ func Home(w http.ResponseWriter, r *http.Request) {
 	data := make(map[string]interface{})
 	data["test0"] = "This is a test0!"                                 // string
 	data["test1"] = 111                                                // int
-	data["test0"] = []string{"Ankara", "London", "New York", "Berlin"} // array
+	data["test2"] = []string{"Ankara", "London", "New York", "Berlin"} // array
 
 	view.Execute(w, data)
 }
