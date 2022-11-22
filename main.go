@@ -13,5 +13,11 @@ func main() {
 
 func Home(w http.ResponseWriter, r *http.Request) {
 	view, _ := template.ParseFiles("index.html")
-	view.Execute(w, nil)
+
+	data := make(map[string]interface{})
+	data["test0"] = "This is a test0!"                                 // string
+	data["test1"] = 111                                                // int
+	data["test0"] = []string{"Ankara", "London", "New York", "Berlin"} // array
+
+	view.Execute(w, data)
 }
