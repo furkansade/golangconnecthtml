@@ -29,7 +29,29 @@
         {{ end }}
     </div>
 
-    
+    <div>
+        <h3>If-Else</h3>
+        {{ if eq .test1 111 }}
+            <p>Number is 111!</p>
+        {{ else }}
+            <p>Number is not 111!</p>
+        {{ end }}
+    </div>
+
+    <!-- 
+    eq
+	    Returns the boolean truth of arg1 == arg2
+    ne
+	    Returns the boolean truth of arg1 != arg2
+    lt
+	    Returns the boolean truth of arg1 < arg2
+    le
+	    Returns the boolean truth of arg1 <= arg2
+    gt
+	    Returns the boolean truth of arg1 > arg2
+    ge
+	    Returns the boolean truth of arg1 >= arg2
+    -->
     
 </body>
 </html>
